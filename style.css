@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    padding-top: 5rem; /* Ajuste o espaçamento superior para o cabeçalho fixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+    text-align: end;
+    padding-left: 2rem;
+    vertical-align: auto;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+#web-developer {
+    font-weight: lighter;
+    margin-left: 1rem;
+}
+
+#nome-titulo {
+    text-align: start;
+    font-size: 25px;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    padding-right: 5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    color: #3633ff;
+}
+
+section {
+    padding: 1.4rem;
+    text-align: center;
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about-me {
+    background-color: #cccccc;
+}
+
+/* Sobre Mim */
+#about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanhos iguais */
+    align-items: center;
+    gap: 50px;
+    padding-inline: 7rem;
+}
+
+#about-me-grid #img-about {
+    width: 100%;
+    max-width: 32.45rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about-me-grid .grid-item-about {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* Skills */
+#skills {
+    background-color: #e2e2e2;
+}
+
+/* Experiência */
+#experience {
+    background-color: #f4f4f4;
+}
+
+/* Contato */
+#contact {
+    background-color: #ffffff;
+}
+
+#contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#contact-list li a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 10px 1rem;
+    }
+
+    #nome-titulo {
+        font-size: 20px; /* Ajusta o tamanho da fonte em telas menores */
+        position: static;
+        transform: none; /* Remove o alinhamento vertical */
+    }
+
+    nav ul {
+        padding-right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #about-me-grid {
+        grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
+        text-align: center; /* Centraliza o texto e a imagem */
+        padding-inline: 1rem;
+    }
+
+    #about-me-grid .grid-item-about {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #about-me-grid #img-about {
+        max-width: 100%; /* Ajusta a largura máxima da imagem */
+    }
+}
