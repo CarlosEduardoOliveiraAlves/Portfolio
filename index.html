@@ -11,23 +11,28 @@
 <header>
     <h1 id="nome-titulo">Carlos Alves<span id="web-developer"> /web developer</span></h1>
     <nav>
-        <a href="#">SOBRE MIM</a>
-        <a href="#">CURRÍCULO</a>
-        <a href="#">PROJETOS</a>
-        <a href="#">CONTATO</a>
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">SOBRE MIM</a></li>
+            <li><a href="#">CURRÍCULO</a></li>
+            <li><a href="#">PROJETOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
     </nav>
 </header>
 
+
 <body>
     <div class="container">
-        <div class="quadrado-branco">
-
-        </div>
         <div class="profile">
             <img src="/img/shadowIcon.jpg" alt="Carlos Eduardo">
-            <h2 style="text-transform: uppercase;">Carlos</h2>
-            <h2 style="text-transform: uppercase;">Eduardo</h2>
-            <p>Estudante de Sistemas</p>
+            <p class="nome-profile">Carlos</p>
+            <p class="nome-profile">Eduardo</p>
+            <p class="dev-web">desenvolvedor web</p>
             <div class="social-icons">
                 <a class="icons" href="#"><img src="/img/discordPNG.png" alt="Discord"></a>
                 <a class="icons" href="#"><img src="/img/githubPNG.png" alt="GitHub"></a>
@@ -46,4 +51,9 @@
         </div>
     </div>
 </body>
+
+<footer>
+
+</footer>
+<script src="/js/script.js"></script>
 </html>
