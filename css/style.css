@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    margin-top: 80px;
     padding: 0;
     box-sizing: border-box;
     background-color: #f5f5f5;
@@ -17,7 +18,13 @@ header {
     padding: 20px 40px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
 
 /* Estilo do menu hambúrguer */
 .menu-hamburguer {
@@ -50,6 +57,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
+    margin-right: 55px;
 }
 
 .nav-links li {
@@ -156,6 +164,7 @@ header {
 
 .buttons {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .buttons a {
@@ -232,6 +241,9 @@ footer {
 
 /* Responsividade */
 @media (max-width: 878px) {
+    body{
+        margin-top: 105px;
+    }
     .container {
         flex-direction: column;
         height: auto;
@@ -261,6 +273,7 @@ footer {
 
     .menu-hamburguer {
         display: flex;
+        margin-right: 50px;
     }
 
     .nav-links {
@@ -282,6 +295,7 @@ footer {
 
     .nav-links.nav-active {
         display: flex;
+        padding-left: 0px;
     }
 
     .menu-hamburguer.toggle span:nth-child(1) {
@@ -299,10 +313,17 @@ footer {
 
 @media (max-width: 480px) {
     
-    
+    body{
+        margin-top: 150px;
+    }
+
     header {
         flex-direction: column;
         text-align: center;
+        padding-left: 5px;
+    }
+    .menu-hamburguer{
+        margin-left: 50px;
     }
 
     header nav {
@@ -313,6 +334,12 @@ footer {
     header nav a {
         margin-left: 0;
         margin-bottom: 10px;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+        padding-left: 0px;
+        right: 0;
     }
 
     .content h1 {
