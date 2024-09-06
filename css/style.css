@@ -45,6 +45,8 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
 }
 
 #web-developer {
@@ -75,6 +77,7 @@ header {
     color: #0056D2;
 }
 
+/*CSS Index*/
 .container {
     display: flex;
     align-items: center;
@@ -196,11 +199,91 @@ header {
     color: white;
 }
 
+/*CSS Curriculo*/
+/* Estilos para curriculo.html */
+.body-curriculo{
+    background: #E6DACE;
+    padding-top: 50px;
+}
+
+#itens-curriculo h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.center-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 60px; /* Espaço para o cabeçalho */
+}
+.container-curriculo {
+    text-align: center;
+    width: 90%;
+    width: 560px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container-curriculo h1, .container-projetos h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-curriculo h2, .container-projetos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333;
+}
+
+.container-curriculo p, .container-projetos p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn-cv {
+    background-color: #0056D2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    float: right;
+}
+
+/* Estilos para a seção de projetos */
+
+.body-projetos{
+    background: #E6DACE;
+}
+
+.projeto-item {
+    margin-top: 40px;
+}
+
+.projeto-item h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.projeto-item p {
+    font-size: 18px;
+    color: #555;
+}
+
 footer {
     background-color: #ffffff;
     padding: 20px;
     font-size: 14px;
     color: #333;
+    margin-top: 20px;
 }
 
 .footer-container {
