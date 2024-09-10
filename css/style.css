@@ -25,7 +25,6 @@ header {
     z-index: 1000;
 }
 
-
 /* Estilo do menu hambúrguer */
 .menu-hamburguer {
     display: none;
@@ -219,7 +218,7 @@ header {
     border-radius: 8px;
     margin-top: 60px; /* Espaço para o cabeçalho */
 }
-.container-curriculo {
+.container-itens {
     text-align: center;
     width: 90%;
     width: 560px;
@@ -321,6 +320,25 @@ footer {
     opacity: 0.7;
 }
 
+/* Transição para o conteúdo */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in-active {
+    background: #e6dace;
+    opacity: 1;
+}
 
 /* Responsividade */
 @media (max-width: 878px) {
