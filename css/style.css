@@ -219,13 +219,29 @@ header {
     margin-top: 60px; /* Espaço para o cabeçalho */
 }
 .container-itens {
-    text-align: center;
+    text-align: left;
     width: 90%;
     width: 560px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-itens p{
+    text-align: start;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.container-itens .coluna h2{
+    color: #0056D2;
+    flex-grow: 5;
+}
+.container-itens .coluna p{
+    font-weight: lighter;
 }
 
 .container-curriculo h1, .container-projetos h1 {
