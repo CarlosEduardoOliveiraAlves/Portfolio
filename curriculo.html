@@ -9,7 +9,10 @@
 
 
 <header>
-    <a href="index.html" id="nome-titulo">Carlos Alves<span id="web-developer"> /web developer</span></a>
+    <div class="left-header">
+        <div id="quadrado"></div>
+        <a href="index.html" id="nome-titulo">Carlos Alves<span id="web-developer"> /web developer</span></a>
+    </div>
     <nav>
         <div class="menu-hamburguer">
             <span></span>
@@ -20,16 +23,19 @@
             <li><a href="#" data-page="index.html">SOBRE MIM</a></li>
             <li><a href="#" data-page="curriculo.html">CURRÍCULO</a></li>
             <li><a href="#" data-page="projetos.html">PROJETOS</a></li>
-        </ul>
+        </ul>        
     </nav>
 </header>
-<body class="body-curriculo">
 
+<body class="body-curriculo">
     <div class="center-container">
-        <section id="itens-curriculo">
+        <div class="quadrado-flex">
+            <div id="quadrado-menor"></div>
             <h1>Currículo</h1>
-            <a href="#" class="btn-cv">BAIXAR CV</a>
-        </section>
+        </div>
+
+        <a href="#" class="btn-cv">BAIXAR CV</a>
+
         <h2>Experiência</h2>
         <section class="container-itens">
             <div class="coluna">
@@ -59,14 +65,67 @@
             </div>
             <p>Neste sentido, a consolidação das estruturas possibilita uma melhor visão global do impacto na agilidade decisória.</p>
         </section>
-        <h2>Skills</h2>
+        <br>
+
+        <h2>Habilidades Profissionais</h2>
         <section class="container-itens">
-            <p>HTML, CSS, JS, C#, SQL, APIs, GIT, .NET</p>
+            <ul class="skills-list">
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>C#</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>.NET Framework</span>
+                </li>
+                    
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>Bootstrap</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>EF</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>SQL</span>
+                </li>
+                
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>GIT</span>
+                </li>
+            </ul>
         </section>
         <h2>Idiomas</h2>
         <section class="container-itens">
-            <p>Português (nativo), Inglês (intermediário)</p>
+            <ul class="language-list">
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>Português(nativo)</span>
+                </li>
+                <li>
+                    <div class="quadrado-menor"></div>
+                    <span>Inglês(intermediário)</span>
+                </li>
+            </ul>
         </section>
+
+            
+        
     </div>
 
 </body>

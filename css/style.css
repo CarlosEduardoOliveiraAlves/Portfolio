@@ -11,6 +11,25 @@ body {
     font-style: normal;
 }
 
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+#quadrado {
+    background: #0056D2;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
+
+.quadrado-menor {
+    background: #0056D2;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,6 +43,7 @@ header {
     left: 0;
     z-index: 1000;
 }
+
 
 /* Estilo do menu hambúrguer */
 .menu-hamburguer {
@@ -67,7 +87,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
     color: #333;
     transition: color 0.3s;
 }
@@ -124,10 +144,16 @@ header {
     text-transform: uppercase;
 }
 
+hr {
+    width: 15%;
+    border: 1px solid #0056D2;
+    
+}
+
 .profile .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 110px; /* Ajuste conforme necessário */
+    margin-top: 80px; /* Ajuste conforme necessário */
     padding: 10px;
 }
 
@@ -184,7 +210,7 @@ header {
 }
 
 .buttons .btn-curriculo:hover {
-    background-color: #003bb2;
+    background-color: #0056D2;
 }
 
 .buttons .btn-projetos {
@@ -205,27 +231,75 @@ header {
     padding-top: 50px;
 }
 
+.center-container .quadrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #itens-curriculo h1{
     text-align: center;
     font-size: 30px;
 }
 
+.container-itens .skills-list{
+    text-align: start;
+}
+
+.skills-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão */
+    columns: 3;
+}
+
+.skills-list li {
+    font-weight: lighter;
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+.container-itens .language-list{
+    text-align: start;
+    justify-content: space-between;
+}
+
+.language-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão */
+    columns: 2;
+}
+
+.language-list li {
+    font-weight: lighter;
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+.quadrado {
+    width: 20px;
+    height: 20px;
+    background-color: #0056D2;
+    margin-right: 10px; /* Espaço entre o quadrado e o texto */
+}
+
 .center-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 740px;
     padding: 20px;
     margin: auto;
     border-radius: 8px;
     margin-top: 60px; /* Espaço para o cabeçalho */
 }
 .container-itens {
+    margin: auto;
     text-align: left;
     width: 90%;
     width: 560px;
-    padding: 20px;
+    padding:90px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
-    border-radius: 8px;
     display: flex;
     justify-content: space-between;
 }
@@ -238,7 +312,7 @@ header {
 
 .container-itens .coluna h2{
     color: #0056D2;
-    flex-grow: 5;
+    font-size: 20px;
 }
 .container-itens .coluna p{
     font-weight: lighter;
@@ -298,7 +372,7 @@ footer {
     padding: 20px;
     font-size: 14px;
     color: #333;
-    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer-container {
@@ -364,6 +438,7 @@ footer {
     .container {
         flex-direction: column;
         height: auto;
+        margin-top: -29px;
         background-image: linear-gradient(180deg, #ffffff, #ffffff 40%, #f4ece6 0);
     }
 
@@ -472,8 +547,8 @@ footer {
         padding: 10px;
     }
 
-    .profile .social-icons {
-        margin-top: 130px; /* Ajuste conforme necessário */
+    .profile .social-icons{
+        margin-top: 130px;
     }
 
     .profile img {
