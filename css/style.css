@@ -237,6 +237,10 @@ hr {
     align-items: center;
 }
 
+.center-container .row-exp{
+    justify-content: space-between;
+}
+
 #itens-curriculo h1{
     text-align: center;
     font-size: 30px;
@@ -501,9 +505,54 @@ footer {
     .menu-hamburguer.toggle span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    .center-container .row-exp{
+        justify-content: space-between;
+        padding-inline: 70px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .center-container{
+        width: 720px;
+    }
+
+    .container-itens {
+        margin: auto;
+        text-align: left;
+        width: 90%;
+        width: 560px;
+        padding:20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container-itens p{
+        text-align: start;
+        width: 50%;
+        font-weight: lighter;
+    }
+    
+    .container-itens .coluna h2{
+        color: #0056D2;
+        font-size: 20px;
+    }
+    .container-itens .coluna p{
+        font-weight: lighter;
+    }
+
+    .titulo-curriculo{
+        padding-left: 60px;
+    }
 }
 
 @media (max-width: 480px) {
+
+
     
     body{
         margin-top: 150px;
@@ -548,7 +597,7 @@ footer {
     }
 
     .profile .social-icons{
-        margin-top: 130px;
+        margin-top: 103px;
     }
 
     .profile img {
@@ -558,5 +607,51 @@ footer {
 
     .buttons a {
         padding: 10px 20px;
+    }
+
+    .skills-list, .language-list {
+        font-size: 14px;
+    }
+
+    .profile {
+        max-width: 350px;
+    }
+
+    .center-container .row-exp{
+        justify-content: space-between;
+        padding-inline: 0px;
+    }
+
+    .center-container{
+        width: 350px;
+        padding: 0%;
+        margin: 0;
+        margin: auto;
+    }
+
+    .container-itens {
+        padding: 20px;
+        width: 310px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .titulo-curriculo{
+        padding-left: 0px;
+    }
+
+    .container-itens .language-list{
+        text-align: start;
+        width: 290px;
+        
+    }
+    
+    .container-itens .language-list li{
+        text-align: start;
+        width: 300px;
+    }
+
+    footer {
+        font-size: 10px;
     }
 }
