@@ -7,80 +7,86 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
+<body>
+    <header>
+        <div class="left-header">
+            <div id="quadrado"></div>
+            <a href="index.html" id="nome-titulo">Carlos Alves<span id="web-developer"> /developer</span></a>
+        </div>
+        <nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-page="index.html">SOBRE MIM</a></li>
+                <li><a href="#" data-page="curriculo.html">CURRÍCULO</a></li>
+                <li><a href="#" data-page="projetos.html">PROJETOS</a></li>
+            </ul>        
+        </nav>
+    </header>
+    
+    <main class="main-projetos">
+        <div class="center-container">
+            <div class="quadrado-flex">
+                <div id="quadrado"></div>
+                <h1>Projetos</h1>
+            </div>
 
-<header>
-    <div class="left-header">
-        <div id="quadrado"></div>
-        <a href="index.html" id="nome-titulo">Carlos Alves<span id="web-developer"> /developer</span></a>
-    </div>
-    <nav>
-        <div class="menu-hamburguer">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="container-item">
+                <div class="texto">
+                    <h1 style="color: blue;">Calculadora Simples</h1>
+                    <h3>Realizar operações matemáticas básicas (adição, subtração, multiplicação e divisão).</h3>
+                    <p>Este projeto é uma calculadora web que permite aos usuários realizar cálculos simples. A interface é intuitiva, com botões para números e operações, além de um campo de exibição que mostra os resultados. A calculadora é desenvolvida utilizando HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="imagem">
+                    <img src="https://th.bing.com/th/id/OIG3.x84oKk_DimEzLTxkzKw0?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Imagem do Projeto">
+                </div>
+            </div>
+            <br>
+            <div class="container-item">
+                <div class="texto">
+                    <h1 style="color: blue;">To-Do List</h1>
+                    <h3>Permitir aos usuários adicionar, marcar como concluídas e remover tarefas.</h3>
+                    <p>A To-Do List é uma aplicação web que ajuda os usuários a organizarem suas tarefas diárias. Os usuários podem adicionar novas tarefas, marcar as concluídas e removê-las da lista. O projeto é uma ótima oportunidade para praticar manipulação do DOM com JavaScript e estilização com CSS.</p>
+                </div>
+                <div class="imagem">
+                    <img src="https://th.bing.com/th/id/OIG2.oTdoVw9FZFsLmzN0.nZr?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Imagem do Projeto">
+                </div>
+            </div>
+            <br>
+            <div class="container-item">
+                <div class="texto">
+                    <h1 style="color: blue;">Galeria de Imagens</h1>
+                    <h3>Exibir uma coleção de imagens em um layout responsivo.</h3>
+                    <p>Este projeto consiste em uma galeria de imagens que se adapta a diferentes tamanhos de tela. Os usuários podem visualizar miniaturas das imagens e clicar nelas para exibir uma versão maior. A galeria é construída usando HTML, CSS e JavaScript para a funcionalidade de ampliação.</p>
+                </div>
+                <div class="imagem">
+                    <img src="https://th.bing.com/th/id/OIG4.1E3_T87grjR99XVJzJ5.?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Imagem do Projeto">
+                </div>
+            </div>
+            <br>
         </div>
-        <ul class="nav-links">
-            <li><a href="#" data-page="index.html">SOBRE MIM</a></li>
-            <li><a href="#" data-page="curriculo.html">CURRÍCULO</a></li>
-            <li><a href="#" data-page="projetos.html">PROJETOS</a></li>
-        </ul>        
-    </nav>
-</header>
-
-<body class="body-projetos">
-    <div class="center-container">
-        <div class="container-item">
-            <div class="texto">
-              <h1 style="color: blue;">Calculadora Simples</h1>
-              <h3>Realizar operações matemáticas básicas (adição, subtração, multiplicação e divisão).</h3>
-              <p>Este projeto é uma calculadora web que permite aos usuários realizar cálculos simples. A interface é intuitiva, com botões para números e operações, além de um campo de exibição que mostra os resultados. A calculadora é desenvolvida utilizando HTML, CSS e JavaScript.</p>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Política de Cookies</p>
+                <p>Política de Privacidade</p>
+                <p>© 2024 por Carlos Eduardo Oliveira Alves.</p>
             </div>
-            <div class="imagem">
-              <img src="/img/projeto1IMG.png" alt="Imagem do Projeto">
-            </div>
-        </div>
-        <br>
-        <div class="container-item">
-            <div class="texto">
-              <h1 style="color: blue;">To-Do List</h1>
-              <h3>Permitir aos usuários adicionar, marcar como concluídas e remover tarefas.</h3>
-              <p>A To-Do List é uma aplicação web que ajuda os usuários a organizarem suas tarefas diárias. Os usuários podem adicionar novas tarefas, marcar as concluídas e removê-las da lista. O projeto é uma ótima oportunidade para praticar manipulação do DOM com JavaScript e estilização com CSS.</p>
-            </div>
-            <div class="imagem">
-              <img src="/img/projeto1IMG.png" alt="Imagem do Projeto">
-            </div>
-        </div>
-        <br>
-        <div class="container-item">
-            <div class="texto">
-              <h1 style="color: blue;">Galeria de Imagens</h1>
-              <h3>Exibir uma coleção de imagens em um layout responsivo.</h3>
-              <p>Este projeto consiste em uma galeria de imagens que se adapta a diferentes tamanhos de tela. Os usuários podem visualizar miniaturas das imagens e clicar nelas para exibir uma versão maior. A galeria é construída usando HTML, CSS e JavaScript para a funcionalidade de ampliação.</p>
-            </div>
-            <div class="imagem">
-              <img src="/img/projeto1IMG.png" alt="Imagem do Projeto">
+            <div class="footer-right">
+                <div class="footer-info">
+                    <p><strong>Telefone</strong><br>(27) 99285-2929</p>
+                    <p><strong>Email</strong><br>carlos.eduardo.oliver.alves@gmail.com</p>
+                </div>
             </div>
         </div>
-        <br>
-    </div>
+    </footer>
+    <script src="/js/script.js"></script>
 </body>
-
-<!-- Rodapé -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-left">
-            <p>Política de Cookies</p>
-            <p>Política de Privacidade</p>
-            <p>© 2024 por Carlos Eduardo Oliveira Alves.</p>
-        </div>
-        <div class="footer-right">
-            <div class="footer-info">
-                <p><strong>Telefone</strong><br>(27) 99285-2929</p>
-                <p><strong>Email</strong><br>carlos.eduardo.oliver.alves@gmail.com</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="/js/script.js"></script>
 </html>
+    

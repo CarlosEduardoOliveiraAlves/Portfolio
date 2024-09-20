@@ -14,7 +14,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links a, .btn-curriculo, .btn-projetos').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();  // Evita a navegação padrão
 
@@ -56,4 +56,3 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
-
